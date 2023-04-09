@@ -1,7 +1,5 @@
 - name: Debug log 2
   id: debug_log_2
-  action: publish:gitlab:test
+  action: "debug:log"
   input:
-    allowedHosts: ["gitlab.com"]
-        template: |
-          "deployment": "abhi"
+    message: Second log
